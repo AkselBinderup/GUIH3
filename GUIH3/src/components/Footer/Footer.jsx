@@ -1,20 +1,10 @@
 import React from "react";
+import "./Footer.css"; // relative path to your CSS file
 
-export const Footer = () => {
-  return <>
-
-<div
-         style={{
-          backgroundColor: "#455d7a",
-          color: "#e3e3e3",
-          padding: "10px 20px", // reasonable padding
-          textAlign: "center",
-          borderRadius: "10px",
-          width: "100%",         // full width of container
-          boxSizing: "border-box",
-        }}
-    >
-    <h3>20 år</h3>
+export const Footer = ({ FooterText }) => {
+  return (
+    <div className="Footer">
+      <h3>{FooterText}</h3>
     </div>
-  </>;
+  );
 };

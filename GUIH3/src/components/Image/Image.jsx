@@ -1,7 +1,7 @@
 import React from 'react'
 import ShaqPortrait from 'C:\\Users\\Z6APT\\GUIH3\\GUIH3\\src\\assets\\images\\PotrætShaquille.jpg' // adjust path as needed
 
-export const Image = () => {
+export const Image = ({imgPath}) => {
   return (
     <img 
       src={ShaqPortrait}

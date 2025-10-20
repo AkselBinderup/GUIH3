@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
-export const InfoCard = () => {
+export const InfoCard = ({ title, items }) => {
   return (
-    <div >
-        <p>Hobbier:</p>
-        <p> - Sundhed og velvære</p> 
-        <p> - Guitar</p>
-        <p> - Læse</p>
+    <div>
+      <p>{title}</p>
+        {items.map((item, index) => (
+        
+        <p key={index}>- {item}</p>
+      
+      ))}
     </div>
-  )
-}
+  );
+};
