@@ -5,18 +5,14 @@ import { Image } from "./components/Image/Image";
 
 function App() {
   return (
-    <body>
-<div class="Container-Container">
-      <div class="GUIContainer">
-        <Header />
-        <Footer />
-        <Image/>
-
-        <InfoCard/>
+    <div className="Container-Container">
+      <Header />
+      <div className="Center-Content">
+        <Image />
+        <InfoCard />
       </div>
+      <Footer />
     </div>
-    </body>
-    
   );
 }
 
